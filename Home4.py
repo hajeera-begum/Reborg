@@ -2,26 +2,20 @@ def jump():
     move()
     move()
     move()
-​
-def inner_wall():
-    turn_left()
-    jump()
-​
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
-​
-def outer_wall():
+def L_shape():
+    jump()
+    turn_left()
+    jump()
     turn_right()
     move()
     turn_right()
 ​
-for i in range(3):
-    jump()
-    inner_wall()
-    outer_wall()
-​
+for _ in range(3):
+    L_shape()
 jump()
-inner_wall()
-    
+turn_left()
+jump()
