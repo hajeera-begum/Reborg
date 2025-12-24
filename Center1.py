@@ -1,14 +1,14 @@
-count_steps=0
-def turn_back():
-    centre=round(count_steps/2)
-    for i in range(centre):
-        move()
-    put()
-    done()
+width=0
 while True:
     move()
-    count_steps+=1
+    width+=1
     if wall_in_front():
         turn_left()
         turn_left()
-        turn_back()
+        w=round(width/2)
+        for i in range(w):
+            move()
+        put()
+        done()
+          
+    
