@@ -1,7 +1,9 @@
 def turn_right():
-    for i in range(3):
-        turn_left()
-while not at_goal():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
     move()
     turn_left()
     move()
@@ -10,4 +12,8 @@ while not at_goal():
     turn_right()
     move()
     turn_left()
-        
+
+number_of_steps=6
+while number_of_steps>0:
+    jump()
+    number_of_steps-=1
